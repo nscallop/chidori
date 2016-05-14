@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Usage iOS">
+    <meta name="author" content="Masamichi Ueta">
+    <title>使い方 Android</title>
+
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/app-style.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../js/bootstrap.min.js"></script>
+    
+    <!-- owl -->
+    <link rel="stylesheet"href="../../lib/owl-carousel/owl.carousel.css">
+	<link rel="stylesheet"href="../../lib/owl-carousel/owl.theme.css">
+    
+    <script src="../../js/jquery-1.11.0.min.js"></script>
+	<script src="../../lib/owl-carousel/owl.carousel.min.js"></script>
+    
+    <script>
+	$(document).ready(function() {
+	
+		$("#owl-photo").owlCarousel({
+			navigation : false, // Show next and prev buttons
+			slideSpeed : 300,//ページ送りした時のスライドスピード
+			autoPlay: false,
+			singleItem:true,//アイテムを1つにする
+		});
+		$("#owl-sort").owlCarousel({
+			navigation : false, // Show next and prev buttons
+			slideSpeed : 300,//ページ送りした時のスライドスピード
+			autoPlay: false,
+			singleItem:true,//アイテムを1つにする
+		});
+		$("#owl-log").owlCarousel({
+			navigation : false, // Show next and prev buttons
+			slideSpeed : 300,//ページ送りした時のスライドスピード
+			autoPlay: false,
+			singleItem:true,//アイテムを1つにする
+		});
+
+	});
+	</script>
+    
+  </head>
+  <body>
+
+	<div class="container">
+
+  		<div class="page-header">
+			<h2 class="header-title">お酒の写真を撮る</h2>
+			<div id="owl-photo" class="owl-carousel owl-theme">
+				<div class="item">
+					<img src="../../img/android_usage1-1_ja.png">
+					<p class="ss-description">TOP画面。ログ一覧を確認できます。画面下部にあるボタンからログを追加できます。</p>
+				</div>
+				<div class="item">
+					<img src="../../img/android_usage1-2_ja.png">
+					<p class="ss-description">ログの写真は、カメラまたはライブラリから追加できます。</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="page-header">
+			<h2 class="header-title">お酒について入力する</h2>
+			<div id="owl-log" class="owl-carousel owl-theme">
+				<div class="item">
+					<img src="../../img/android_usage2-1_ja.png">
+					<p class="ss-description">ログには、写真のほか、日付、評価、酒、店情報を記録できます。</p>
+				</div>
+				<div class="item">
+					<img src="../../img/android_usage2-2_ja.png">
+					<p class="ss-description">位置情報も記録することができます。ピンの位置は地図を長押しすることで変更することができます。</p>
+				</div>
+				<div class="item">
+					<img src="../../img/android_usage2-3_ja.png">
+					<p class="ss-description">お店の横にあるボタンからFoursquareで居酒屋を検索できます。</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="page-header">
+			<h2 class="header-title">メニュー</h2>
+			<div id="owl-sort" class="owl-carousel owl-theme">	
+				<div class="item">
+					<img src="../../img/android_usage3-1_ja.png">
+					<p class="ss-description">右側のメニューからログの並び替えができます。</p>
+				</div>
+				<div class="item">
+					<img src="../../img/android_usage3-2_ja.png">
+					<p class="ss-description">右側のメニューからログの検索もできます。</p>
+				</div>
+				<div class="item">
+					<img src="../../img/android_usage3-3_ja.png">
+					<p class="ss-description">左側のメニューからお店一覧画面などに切り替えることができます。</p>
+				</div>
+			</div>
+		</div>		
+		
+	</div>
+  </body>
+</html>

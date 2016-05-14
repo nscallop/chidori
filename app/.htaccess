@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !^/app/ja-JP/.*$
+RewriteCond %{HTTP:Accept-Language} ^ja [NC]
+RewriteRule ^(.*)$ /app/ja-JP/$1 [R=301,L]
+</IfModule>

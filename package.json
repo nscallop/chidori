@@ -1,0 +1,43 @@
+{
+  "name": "chidori",
+  "version": "1.0.0",
+  "description": "Web for Chidori",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "sass": "gulp sass",
+    "js": "gulp js",
+    "fonts": "gulp fonts",
+    "watch": "gulp watch",
+    "clean": "gulp clean",
+    "build": "gulp build",
+    "serve": "gulp serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nscallop/chidori.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nscallop/chidori/issues"
+  },
+  "homepage": "https://github.com/nscallop/chidori#readme",
+  "dependencies": {
+    "autoprefixer": "^6.3.6",
+    "bootstrap": "^4.0.0-alpha.2",
+    "del": "^2.2.0",
+    "font-awesome": "^4.6.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^3.2.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^2.0.0-alpha",
+    "jquery": "^2.2.3",
+    "run-sequence": "^1.1.5",
+    "tether": "^1.2.4"
+  }
+}

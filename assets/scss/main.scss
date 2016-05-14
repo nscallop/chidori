@@ -1,0 +1,75 @@
+@import "variable";
+@import "common";
+
+body {
+  font-family: -apple-system, "HelveticaNeue-Thin", "Helvetica Neue Thin", Helvetica, Arial, sans-serif;
+  color: $text-color;
+}
+
+.notransition {
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+section {
+  padding: 8rem 0 7rem;
+  text-align: center;
+}
+
+
+/* Hero
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hero {
+  background-image: url('../images/hero.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat:no-repeat;
+  color: #fff;
+  position: relative;
+  min-height: 600px;
+  height: 100vh;
+  padding: 0;
+
+  @include retina {
+    background-image: url('../images/hero_2x.jpg');
+  }
+}
+
+.hero-content {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.hero-store {
+  padding: 5rem 0;
+}
+
+.google-play-img {
+  vertical-align: top;
+}
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+footer {
+  min-width: 300px;
+  background-color: $sub-color;
+  text-align: center;
+}
+
+footer p {
+  padding-top: 1em;
+  color: $footer-text-color;
+}
+
+footer a {
+  color: $footer-text-color;
+  text-decoration: none;
+}
