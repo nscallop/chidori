@@ -25,7 +25,7 @@ gulp.task('site-sass', function() {
 });
 
 gulp.task('vendor-sass', function() {
-  return gulp.src(['./node_modules/bootstrap/scss/bootstrap.scss', './node_modules/font-awesome/scss/font-awesome.scss', './node_modules/owlcarousel/owl-carousel/owl.carousel.css', './node_modules/owlcarousel/assets/css/bootstrapTheme.css', './node_modules/owlcarousel/owl-carousel/owl.theme.css'])
+  return gulp.src(['./node_modules/bootstrap/scss/bootstrap.scss', './node_modules/font-awesome/scss/font-awesome.scss', './node_modules/owlcarousel/owl-carousel/owl.carousel.css', './node_modules/owlcarousel/owl-carousel/owl.theme.css'])
              .pipe(sourcemaps.init())
              .pipe(plumber())
              .pipe(sass())
