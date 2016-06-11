@@ -15,17 +15,17 @@ gulp.task('clean', function(callback) {
 });
 
 gulp.task('site-sass', function() {
-  return gulp.src('./assets/scss/main.scss')
+  return gulp.src(['./assets/scss/main.scss', './assets/scss/app.scss'])
              .pipe(sourcemaps.init())
              .pipe(plumber())
              .pipe(sass())
-             .pipe(rename('style.css'))
+             .pipe(concat('style.css'))
              .pipe(sourcemaps.write('./maps'))
              .pipe(gulp.dest('./css'));
 });
 
 gulp.task('vendor-sass', function() {
-  return gulp.src(['./node_modules/bootstrap/scss/bootstrap.scss', './node_modules/font-awesome/scss/font-awesome.scss'])
+  return gulp.src(['./node_modules/bootstrap/scss/bootstrap.scss', './node_modules/font-awesome/scss/font-awesome.scss', './node_modules/owlcarousel/owl-carousel/owl.carousel.css', './node_modules/owlcarousel/owl-carousel/owl.theme.css'])
              .pipe(sourcemaps.init())
              .pipe(plumber())
              .pipe(sass())
@@ -46,7 +46,7 @@ gulp.task('sass', function(callback) {
 });
 
 gulp.task('vendor-js', function() {
-  return gulp.src(['./node_modules/jquery/dist/jquery.js', './node_modules/tether/dist/js/tether.js', './node_modules/bootstrap/dist/js/bootstrap.js'])
+  return gulp.src(['./node_modules/jquery/dist/jquery.js', './node_modules/tether/dist/js/tether.js', './node_modules/bootstrap/dist/js/bootstrap.js', './node_modules/owlcarousel/owl-carousel/owl.carousel.js'])
              .pipe(sourcemaps.init())
              .pipe(concat('vendor.js'))
              .pipe(sourcemaps.write('./maps'))
