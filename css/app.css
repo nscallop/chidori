@@ -36,8 +36,16 @@ section {
   top: 50%;
   transform: translateY(-50%); }
 
+.hero-headline {
+  padding: 1rem 0; }
+
 .hero-store {
-  padding: 5rem 0; }
+  padding: 4rem 0; }
+
+.app-icon {
+  height: 100px;
+  width: 100px;
+  border-radius: 5px; }
 
 .google-play-img {
   vertical-align: top; }
