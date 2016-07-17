@@ -1,6 +1,10 @@
 @import "variable";
 @import "common";
 
+body {
+  background-color: #25262E;
+}
+
 .ss {
   width: $phone-width * 2 / 3;
 }
