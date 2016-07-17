@@ -15,11 +15,21 @@ gulp.task('clean', function(callback) {
 });
 
 gulp.task('site-sass', function() {
-  return gulp.src(['./assets/scss/main.scss', './assets/scss/app.scss'])
+  return gulp.src(['./assets/scss/main.scss'])
              .pipe(sourcemaps.init())
              .pipe(plumber())
              .pipe(sass())
              .pipe(concat('style.css'))
+             .pipe(sourcemaps.write('./maps'))
+             .pipe(gulp.dest('./css'));
+});
+
+gulp.task('app-sass', function() {
+  return gulp.src(['./assets/scss/main.scss', './assets/scss/app.scss'])
+             .pipe(sourcemaps.init())
+             .pipe(plumber())
+             .pipe(sass())
+             .pipe(concat('app.css'))
              .pipe(sourcemaps.write('./maps'))
              .pipe(gulp.dest('./css'));
 });
@@ -42,7 +52,7 @@ gulp.task('css-autoprefixer', function() {
 });
 
 gulp.task('sass', function(callback) {
-  runSequence(['site-sass', 'vendor-sass'], 'css-autoprefixer', callback);
+  runSequence(['site-sass', 'app-sass', 'vendor-sass'], 'css-autoprefixer', callback);
 });
 
 gulp.task('vendor-js', function() {
