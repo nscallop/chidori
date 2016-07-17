@@ -9,3 +9,10 @@ body {
 .ss {
   width: $phone-width * 2 / 3;
 }
+
+.page-header {
+  margin-top: 40px;
+  h2.header-title {
+    font-size: x-large;
+  }
+}
