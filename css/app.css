@@ -71,3 +71,8 @@ body {
 
 .ss {
   width: 366.66667px; }
+
+.page-header {
+  margin-top: 40px; }
+  .page-header h2.header-title {
+    font-size: x-large; }
